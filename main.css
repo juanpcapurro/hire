@@ -1,0 +1,108 @@
+/******************************************************************************/
+/*                               General Style                                */
+/******************************************************************************/
+
+body {
+  color: #272727;
+  background: 0 0;
+  background-color: #f0f0f0;
+}
+html{
+  font-family: "Inconsolata", "monospace";
+  font-size: 20px;
+}
+* {
+  text-size-adjust: 180%;
+}
+h2 {
+  margin-top: 1.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+ul li {
+  padding-left: 1em;
+}
+li:before{
+  /* I'm literally the worst person */
+  content: "-"
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 30px;
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding: 0.4rem;
+  }
+}
+
+.main-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+.my-name{
+  font-size: 3rem;
+}
+.main-header img{
+  /* align-self: stretch; */
+  max-height: 6rem;
+}
+
+.inline-icon {
+  display: inline;
+  margin-right: 0.5em;
+  max-height: 1rem;
+  max-width: 1rem;
+  vertical-align: bottom;
+}
+
+.header-underline{
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.links-wrapper{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem;
+  width: calc(100% - 2rem);
+}
+.links{
+  margin: auto;
+  display: inline-block;
+}
+.links a:after {
+  content: " |"
+}
+.links a:first-child:before {
+  content: "| "
+}
+
+.introduction{
+  padding: 0 1em;
+}
+.section-content{
+  padding-left: 1em;
+}
+
+.dated-header{
+  display: flex;
+  justify-content: space-between;
+}
+.dated-header .header-date{
+  font-size: 1rem;
+  align-self: center;
+}
